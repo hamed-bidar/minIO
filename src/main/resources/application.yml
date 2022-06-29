@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+    datasource:
+       url: jdbc:postgresql://localhost:5432/bank_ostad
+       username: postgres
+       password: 123
+
+
+    jpa:
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      database: POSTGRESQL
+      hibernate:
+       ddl-auto: update
