@@ -3,7 +3,7 @@ server:
 
 spring:
     datasource:
-       url: jdbc:postgresql://localhost:5432/bank_ostad
+       url: jdbc:postgresql://localhost:5432/minio_proj
        username: postgres
        password: 123
 
@@ -13,3 +13,14 @@ spring:
       database: POSTGRESQL
       hibernate:
        ddl-auto: update
+
+minio:
+  bucket:
+    name: test
+  default:
+    folder: "/"
+  access:
+    name: minioadmin
+    secret: minioadmin
+
+    url: http://127.0.0.1:9000
